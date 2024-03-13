@@ -1,6 +1,130 @@
-nav {
-  background-color: hwb(0 96% 4%);
-  padding: 20px;
+/* Estilo para o body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para o header */
+header {
+  color: hsl(248, 86%, 19%);
   text-align: center;
+}
+
+/* Estilo para o nav */
+nav {
+  text-align: center;
+  background-color: hsl(204, 70%, 53%);
+  justify-content: center;
+  padding: 10px 0; /* Adiciona padding ao nav */
+}
+
+nav a {
+  color: hwb(0 100% 0%);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilo para o main */
+main {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* Estilo para o article */
+article {
+  padding: 20px;
+}
+
+/* Estilo para as seções */
+.stomatopoda-info {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
+.section-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Estilo para as imagens */
+.stomatopoda-info img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  max-height: 300px; /* Define uma altura máxima para as imagens */
+}
+
+/* Estilo para as referências bibliográficas */
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Estilo para o aside */
+aside {
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 25%;
+  float: right;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: hsl(204, 70%, 53%);
+  color: hwb(0 100% 0%);
+  padding: 10px 0;
+  text-align: center;
+  clear: both;
+  margin-top: 20px; /* Adiciona margem ao rodapé */
+}
+
+/* Estilo para a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid hsl(0, 0%, 87%); /* Adiciona borda à tabela */
+}
+
+th , td {
+  padding: 8px;
+  border-bottom: 1px solid hsl(0, 0%, 87%); /* Linha divisória entre as células */
+  text-align: left;
+}
+
+th {
+  background-color: hsl(0, 0%, 95%); /* Cor de fundo do cabeçalho */
+}
+
+/* Estilo para o iframe do vídeo */
+aside iframe {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Aumenta o espaço abaixo do vídeo */
+}
+
+/* Estilo para responsividade */
+
+@media screen and ( max-width : 768px ) {
+
+  main {
+    max-width: 90%;
+  }
+
+  .stomatopoda-info {
+    flex-direction: column;
+  }
+
+  .section-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  aside {
+    max-width: 100%;
+    float: none;
+  }
+}
+
